@@ -172,7 +172,7 @@ var server = net.createServer(function(c) {
 		}
 
 		if (functionTree.funcs.test(input)) {
-			c.write('\r\n\r\n' + chalk.blue('+++Avialable Functions+++') + ' \r\n/name - Change Name \n/color <color> <message> - send message in another color \n/msg <user> <message> - send a private message to the user selected\r\n')
+			c.write('\r\n\r\n' + chalk.blue('+++Avialable Functions+++') + ' \r\n/name - Change Name \n/color <color> <message> - send message in another color \n/msg <user> <message> - send a private message to the user selected\r\n/kick <user> - kicks a user off the chat \r\n /yell <msg> - Yells the message \r\n /tableflip - flips the Fing table\r\n')
 			return false;
 		}
 
